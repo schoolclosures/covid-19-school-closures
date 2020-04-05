@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.styles.scss';
+import './button.styles.scss';
 
 const Button = ({outlineColor, handleClick, buttonAction}) => {
   return (
-    <button onClick={handleClick} className={`${outlineColor}-btn`}>
+    <button onClick={handleClick} className={`${outlineColor}-btn cta-btn`}>
       {buttonAction}
     </button>
   )

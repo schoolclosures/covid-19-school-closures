@@ -4,6 +4,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { rootReducer } from './reducers/root.reducer';
 import App from './components/App';
+import './index.scss';
 
 const saveStateToLocalStorage = (state) => {
   const serializedState = JSON.stringify(state);
