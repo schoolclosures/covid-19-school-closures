@@ -1,0 +1,47 @@
+@import '../../../components';
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  padding: 1em;
+  justify-content: space-between;
+  width: 100%;
+
+  .menu-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+  color: white;
+
+  &:before {
+    content: fa-content($fa-var-bars)
+  }
+}
+
+.home-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+  color: white;
+
+  &:before {
+    content: fa-content($fa-var-home)
+  }
+}
+
+.nav-text {
+  color: $accent-white;
+  margin-left: .5em;
+}
+
+.search-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+  color: white;
+
+  &:before {
+    content: fa-content($fa-var-search)
+  }
+}
+}
