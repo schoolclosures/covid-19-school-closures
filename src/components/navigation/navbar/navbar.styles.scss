@@ -18,20 +18,13 @@
   }
 }
 
-.home-icon {
-  @extend %fa-icon;
-  @extend .fas;
-  font-size: 1.3em;
-  color: white;
-
-  &:before {
-    content: fa-content($fa-var-home)
-  }
-}
-
 .nav-text {
   color: $accent-white;
   margin-left: .5em;
+}
+
+.home-icon {
+  color: $accent-white;
 }
 
 .search-icon {

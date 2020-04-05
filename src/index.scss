@@ -17,3 +17,12 @@
   flex-flow: column nowrap;
 }
 
+.home-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+
+  &:before {
+    content: fa-content($fa-var-home)
+  }
+}
