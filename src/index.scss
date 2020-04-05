@@ -26,3 +26,33 @@
     content: fa-content($fa-var-home)
   }
 }
+
+.twitter-icon {
+  @extend %fa-icon;
+  @extend .fab;
+  font-size: 1.3em;
+
+  &:before {
+    content: fa-content($fa-var-twitter)
+  }
+}
+
+.facebook-icon {
+  @extend %fa-icon;
+  @extend .fab;
+  font-size: 1.3em;
+
+  &:before {
+    content: fa-content($fa-var-facebook)
+  }
+}
+
+.email-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+
+  &:before {
+    content: fa-content($fa-var-envelope)
+  }
+}

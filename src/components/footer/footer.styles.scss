@@ -44,6 +44,17 @@
     }
   }
 
+  .footer-social-icons {
+    .footer-social-icon {
+      margin-right: 1em;
+      background-color: $primary-grey;
+      color: $accent-white;
+      padding: .4em;
+      font-size: 1em;
+      border-radius: 50px;
+    }
+  }
+
   .copyright-info {
     margin: 1em;
     color: $primary-blue;
