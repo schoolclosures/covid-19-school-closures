@@ -11,7 +11,12 @@
   }
 
   .school-closures {
+    color: $primary-blue;
     margin: 1em;
+    p {
+      margin-left: .5em;
+      font-size: 1.5em;
+    }
   }
 
   .footer-links-holder {
@@ -32,10 +37,15 @@
     input {
       padding: .5em 1em;
       width: 100%;
+      border: none;
+      background-color: $accent-white;
+      color: white;
+      border-bottom: 1px solid $primary-pink;
     }
   }
 
   .copyright-info {
     margin: 1em;
+    color: $primary-blue;
   }
 }
