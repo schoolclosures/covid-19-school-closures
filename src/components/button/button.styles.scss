@@ -1,0 +1,14 @@
+%cta-btn {
+  background: 0 0;
+  border: 1px solid;
+}
+
+.white-btn {
+  @extend %cta-btn;
+  border-color: white;
+}
+
+.blue-btn {
+  @extend %cta-btn;
+  border-color: blue;
+}
