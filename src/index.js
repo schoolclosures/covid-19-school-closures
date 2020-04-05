@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { rootReducer } from '../reducers';
-import App from './App';
+import { rootReducer } from './reducers/root.reducer';
+import App from './components/App';
 
 const saveStateToLocalStorage = (state) => {
   const serializedState = JSON.stringify(state);
@@ -32,7 +32,7 @@ const persistedState = getStateFromLocalStorage();
 const store = createStore(
   rootReducer,
   persistedState,
-)
+);
 
 const AppWrapper = () => {
   return (
