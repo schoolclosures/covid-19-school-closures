@@ -1,0 +1,34 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './footer.styles.scss';
+
+const Footer = () => {
+  return(
+    <div className="footer column">
+      <div className="hotline">
+        <h2 className="heading">Hotline:</h2>
+        <h2 className="sub-text">(145) - 243 - 7809</h2>
+      </div>
+
+      <div className="school-closures row"><i className="home-icon"></i> <p>schoolclosures.org</p></div>
+
+      <div className="footer-links-holder column">
+        <Link className="footer-link" to="#">For Parents</Link>
+        <Link className="footer-link" to="#">For Teachers</Link>
+        <Link className="footer-link" to="#">About Us</Link>
+        <Link className="footer-link" to="#">Contact Us</Link>
+      </div>
+
+      <div className="newsletter-subscription-holder">
+        <p className="heading">Sign up below for updated resources.</p>
+        <input className="newsletter-subscription-input" placeholder="Email Address"/>
+      </div>
+
+      <div className="circular-line-breaks"></div>
+
+      <div className="copyright-info"><p>2020 schoolclosures.org. All rights reserved.</p></div>
+    </div>
+  )
+};
+
+export default Footer;

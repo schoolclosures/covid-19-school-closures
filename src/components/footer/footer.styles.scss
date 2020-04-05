@@ -1,0 +1,41 @@
+@import '../../components';
+
+.footer {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .hotline {
+    margin: 2em;
+  }
+
+  .school-closures {
+    margin: 1em;
+  }
+
+  .footer-links-holder {
+    .footer-link {
+      margin-top: 1em;
+      text-decoration: none;
+      color: $primary-blue;
+    }
+  }
+
+  .newsletter-subscription-holder {
+    margin: 2em;
+
+    .heading {
+      margin: 1em;
+    }
+
+    input {
+      padding: .5em 1em;
+      width: 100%;
+    }
+  }
+
+  .copyright-info {
+    margin: 1em;
+  }
+}
