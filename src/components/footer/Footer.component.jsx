@@ -24,7 +24,17 @@ const Footer = () => {
         <input className="newsletter-subscription-input" placeholder="Email Address"/>
       </div>
 
-      <div className="circular-line-breaks"></div>
+      <div className="footer-social-icons">
+        <a href="" target="_blank" rel="noreferrer noopener">
+          <i className="footer-social-icon twitter-icon"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer noopener">
+          <i className="footer-social-icon facebook-icon"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer noopener">
+          <i className="footer-social-icon email-icon"></i>
+        </a>
+      </div>
 
       <div className="copyright-info"><p>2020 schoolclosures.org. All rights reserved.</p></div>
     </div>
