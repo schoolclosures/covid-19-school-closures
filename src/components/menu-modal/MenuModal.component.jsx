@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './menu-modal.styles.scss';
 
 const MenuModal = ({ modalIsOpen, closeModal }) => {
-  console.log(modalIsOpen)
   return (
     <div className={`menu-modal column ${modalIsOpen ? "open" : ""}`}>
       <button onClick={() => closeModal()} className="no-bg-btn">

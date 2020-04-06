@@ -33,4 +33,15 @@ div.menu-modal {
 
 div.menu-modal.open {
   display: flex;
+  animation: open-modal .5s ease-in-out 0s 1 forwards normal;
+}
+
+@keyframes open-modal {
+  0% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
