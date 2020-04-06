@@ -1,8 +1,9 @@
 import React from 'react';
-import Navbar from './navigation/navbar/NavBar.component';
+import Navbar from '../containers/navigation/Navbar.container';
 import Hero from './hero/Hero.component';
 import Footer from './footer/Footer.component';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import MenuModal from '../containers/menu-modal/MenuModal.container';
 
 
 const App = () => {
@@ -10,7 +11,8 @@ const App = () => {
     <>
     <Router>
       <Navbar />
-      <Route component={Hero}/>
+      <MenuModal />
+      <Route path="/" component={Hero}/>
       <Footer />
     </Router>
     </>
