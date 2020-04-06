@@ -1,0 +1,36 @@
+@import './../../components';
+
+div.menu-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  background-color: $primary-blue;
+  justify-content: center;
+  align-items: center;
+
+  .close-icon {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    color: $primary-pink;
+    font-size: 1.5em;
+  }
+
+  .menu-modal-link {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: $accent-white;
+    text-decoration: none;
+
+    &:active {
+      border-bottom: 1px solid $primary-pink;
+    }
+  }
+}
+
+div.menu-modal.open {
+  display: flex;
+}
