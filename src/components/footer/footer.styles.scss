@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 1em;
 
   .hotline {
     margin: 2em;
@@ -24,23 +25,6 @@
       margin-top: 1em;
       text-decoration: none;
       color: $primary-blue;
-    }
-  }
-
-  .newsletter-subscription-holder {
-    margin: 2em;
-
-    .heading {
-      margin: 1em;
-    }
-
-    input {
-      padding: .5em 1em;
-      width: 100%;
-      border: none;
-      background-color: $accent-white;
-      color: white;
-      border-bottom: 1px solid $primary-pink;
     }
   }
 

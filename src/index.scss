@@ -17,6 +17,14 @@
   flex-flow: column nowrap;
 }
 
+.no-bg-btn {
+  background: 0 0;
+  border: none;
+}
+
+
+// icons
+
 .home-icon {
   @extend %fa-icon;
   @extend .fas;
@@ -55,4 +63,13 @@
   &:before {
     content: fa-content($fa-var-envelope)
   }
+}
+
+.close-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-times)
+  } 
 }
