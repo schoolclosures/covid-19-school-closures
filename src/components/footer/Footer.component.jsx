@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.styles.scss';
+import SocialIcons from '../social-icons/SocialIcons.component';
+import NewsletterForm from '../newsletter-form/NewsletterForm.component';
 
 const Footer = () => {
   return(
@@ -19,22 +21,9 @@ const Footer = () => {
         <Link className="footer-link" to="#">Contact Us</Link>
       </div>
 
-      <div className="newsletter-subscription-holder">
-        <p className="heading">Sign up below for updated resources.</p>
-        <input className="newsletter-subscription-input" placeholder="Email Address"/>
-      </div>
-
-      <div className="footer-social-icons">
-        <a href="" target="_blank" rel="noreferrer noopener">
-          <i className="footer-social-icon twitter-icon"></i>
-        </a>
-        <a href="" target="_blank" rel="noreferrer noopener">
-          <i className="footer-social-icon facebook-icon"></i>
-        </a>
-        <a href="" target="_blank" rel="noreferrer noopener">
-          <i className="footer-social-icon email-icon"></i>
-        </a>
-      </div>
+      <NewsletterForm />
+  
+      <SocialIcons />      
 
       <div className="copyright-info"><p>2020 schoolclosures.org. All rights reserved.</p></div>
     </div>
