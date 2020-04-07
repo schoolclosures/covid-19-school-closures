@@ -6,10 +6,20 @@
   box-sizing: border-box;
 }
 
-.row {
+%row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row; 
   align-items: center;
+}
+
+.row {
+  @extend %row;
+  flex-wrap: nowrap;
+}
+
+.row-with-wrap {
+  @extend %row; 
+  flex-wrap: wrap;
 }
 
 .column {
@@ -22,6 +32,38 @@
   border: none;
 }
 
+.section {
+  padding: 1em;
+}
+
+.pink-underline {
+  border-bottom: 10px solid $primary-pink;
+}
+
+.blue-underline {
+  border-bottom: 10px solid $accent-blue;
+}
+
+
+// buttons
+%cta-btn {
+  background: 0 0;
+  border: 1px solid;
+  padding: 1em;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.white-btn {
+  @extend %cta-btn;
+  border-color: white;
+  color: $accent-white;
+}
+
+.blue-btn {
+  @extend %cta-btn;
+  border-color: blue;
+}
 
 // icons
 

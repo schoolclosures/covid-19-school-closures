@@ -1,0 +1,14 @@
+@import '../../../../components';
+
+.partners-list {
+  padding: 1em 0;
+  margin: 2em 0;
+  color: $accent-white;
+  background-color: $primary-blue;
+
+  .partner {
+    width: 50%;
+    text-align: center;
+    margin: 1em 0;
+  }
+}
