@@ -15,10 +15,11 @@ const Footer = () => {
       <div className="school-closures row"><i className="home-icon"></i> <p>schoolclosures.org</p></div>
 
       <div className="footer-links-holder column">
+        <Link className="footer-link" to="/">Home</Link>
         <Link className="footer-link" to="#">For Parents</Link>
         <Link className="footer-link" to="#">For Teachers</Link>
         <Link className="footer-link" to="#">About Us</Link>
-        <Link className="footer-link" to="#">Contact Us</Link>
+        <Link className="footer-link" to="/contact">Contact Us</Link>
       </div>
 
       <NewsletterForm />
