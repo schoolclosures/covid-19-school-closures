@@ -1,0 +1,18 @@
+@import '../../components';
+
+.newsletter-subscription-holder {
+  margin: 2em;
+  width: 100%;
+  .heading {
+    margin: 1em;
+  }
+
+  input {
+    padding: .5em 1em;
+    width: 80%;
+    border: none;
+    background-color: $accent-white;
+    color: white;
+    border-bottom: 1px solid $primary-pink;
+  }
+}

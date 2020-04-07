@@ -1,0 +1,39 @@
+@import '../../components';
+
+.about-section {
+  width: 100%;
+  margin-top: 3.4em;
+  
+  .about-intro {
+    background-color: $primary-blue;
+    color: $accent-white;
+    height: 80vh;
+
+    .main-heading {
+      font-size: 2em;
+      color: $primary-orange;
+    }
+  
+    .sub-heading {
+      margin: 1em;
+
+    }
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  
+  .who-we-are {
+    width: 100%;
+    margin-top: 1em;
+
+    div.team-members {
+      flex-wrap: wrap;
+    }
+  }
+
+  .partners {
+  }
+}

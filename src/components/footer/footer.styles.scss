@@ -1,0 +1,47 @@
+@import '../../components';
+
+.footer {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+  width: 100%;
+
+  .hotline {
+    margin: 2em;
+  }
+
+  .school-closures {
+    color: $primary-blue;
+    margin: 1em;
+    p {
+      margin-left: .5em;
+      font-size: 1.5em;
+    }
+  }
+
+  .footer-links-holder {
+    .footer-link {
+      margin-top: 1em;
+      text-decoration: none;
+      color: $primary-blue;
+    }
+  }
+
+  .footer-social-icons {
+    .footer-social-icon {
+      margin-right: 1em;
+      background-color: $primary-grey;
+      color: $accent-white;
+      padding: .4em;
+      font-size: 1em;
+      border-radius: 50px;
+    }
+  }
+
+  .copyright-info {
+    margin: 1em;
+    color: $primary-blue;
+  }
+}

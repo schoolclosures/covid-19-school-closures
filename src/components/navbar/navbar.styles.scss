@@ -1,0 +1,41 @@
+@import '../../components';
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $primary-blue;
+
+  .menu-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+  color: white;
+
+  &:before {
+    content: fa-content($fa-var-bars)
+  }
+}
+
+.nav-text {
+  color: $accent-white;
+  margin-left: .5em;
+}
+
+.home-icon {
+  color: $accent-white;
+}
+
+.search-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+  color: white;
+
+  &:before {
+    content: fa-content($fa-var-search)
+  }
+}
+}
