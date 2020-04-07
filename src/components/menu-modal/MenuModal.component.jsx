@@ -9,11 +9,11 @@ const MenuModal = ({ modalIsOpen, closeModal }) => {
       <button onClick={() => closeModal()} className="no-bg-btn">
         <i className="close-icon"></i>
       </button>
-      <Link className="menu-modal-link" to="#">Home</Link>
+      <Link className="menu-modal-link" to="/">Home</Link>
       <Link className="menu-modal-link" to="#">For Parents</Link>
       <Link className="menu-modal-link" to="#">For Teachers</Link>
-      <Link className="menu-modal-link" to="#">About Us</Link>
-      <Link className="menu-modal-link" to="#">Contact Us</Link>
+      <Link className="menu-modal-link" to="/about">About Us</Link>
+      <Link className="menu-modal-link" to="/contact">Contact Us</Link>
     </div>
   )
 };
