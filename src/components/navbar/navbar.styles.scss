@@ -7,6 +7,7 @@
   justify-content: space-between;
   width: 100%;
   background-color: $primary-blue;
+  z-index: 9998;
 
   .menu-icon {
   @extend %fa-icon;

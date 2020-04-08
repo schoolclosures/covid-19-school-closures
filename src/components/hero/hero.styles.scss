@@ -14,5 +14,16 @@
 
   .hero-cta-holder {
     margin-top: 2em;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-link-holder {
+    width: 40%;
+    height: 50px;
+
+    .btn-link {
+      color: $accent-white;
+    }
   }
 }

@@ -6,6 +6,7 @@ div.menu-modal {
   bottom: 0;
   height: 100vh;
   width: 100%;
+  z-index: 9999;
   display: none;
   background-color: $primary-blue;
   justify-content: center;
