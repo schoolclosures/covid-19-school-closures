@@ -9,7 +9,7 @@ const TeamMember = ({ teamMember }) => {
       <div className="team-member-image" 
         style={{
           backgroundImage: 
-            `url(${fields["Your photo (please use png or jpeg)"]})`
+            // `url(${fields["Your photo (please use png or jpeg)"]})`
           }}
         >
 
