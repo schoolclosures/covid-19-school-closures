@@ -8,6 +8,7 @@ import Contact from './contact/Contact.component';
 import About from './about/About.component';
 import ForParents from './hero-pages/for-parents/ForParents.component';
 import ForTeachers from './hero-pages/for-teachers/ForTeachers.component';
+import TwilioFlexWebChat from './twilio-flexweb-chat/TwilioFlexWebChat.component';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Route exact path="/about" component={About} />
       <Route exact path="/for_teachers" component={ ForTeachers }/>
       <Route exact path="/for-parents" component={ ForParents }/>
+      <TwilioFlexWebChat />
       <Footer />
     </Router>
     </>
