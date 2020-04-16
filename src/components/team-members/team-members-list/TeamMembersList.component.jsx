@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamMember from '../team-member/TeamMember.component';
+import TeamMember from '../../team-member/TeamMember.component';
 import PropTypes from 'prop-types';
 
 const TeamMembersList = ({ teamMembers }) => {
