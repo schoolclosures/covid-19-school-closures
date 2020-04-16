@@ -1,30 +1,42 @@
-import React from 'react';
-import TeamMember from '../../team-member/TeamMember.component';
+import React, { Component } from 'react';
+import TeamMember from '../team-member/TeamMember.component';
 import PropTypes from 'prop-types';
 
-const TeamMembersList = ({ teamMembers }) => {
-  return (
-    <>
-      <h2 className="heading pink-underline">Who we are</h2>
-      <div className="row team-members">
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-        <TeamMember name={"Eric Ries,"} jobDescription={"Entreprenuer"}/>
-      </div>
-    </>
-  )
+class TeamMembersList extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      teamMembers: this.props.teamMembers,
+    }
+  }
+
+  componentDidMount() {
+    const { fetchTeamMembers } = this.props;
+    fetchTeamMembers();
+  }
+
+  render() {
+    const { teamMembers } = this.state;
+
+    return (
+      <>
+        <h2 className="heading pink-underline">Who we are</h2>
+        <div className="row team-members">
+          {teamMembers.map( teamMember => <TeamMember key={teamMember.id} teamMember={teamMember} /> )}
+        </div>
+      </>
+    )
+  }
 };
 
 TeamMembersList.defaultProps = {
-  teamMembers: [{"": ""}]
+  teamMembers: [{"": ""}],
+  fetchTeamMembers: () => {},
 };
 
 TeamMembersList.propTypes = {
-  teamMembers: PropTypes.arrayOf(PropTypes.objectOf(String))
+  teamMembers: PropTypes.arrayOf(PropTypes.objectOf(String)),
+  fetchTeamMembers: PropTypes.func,
 }
 
 export default TeamMembersList;

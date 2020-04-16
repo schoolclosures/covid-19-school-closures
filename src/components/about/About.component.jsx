@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.styles.scss';
-import TeamMembersList from '../team-members/team-members-list/TeamMembersList.componentt';
+import TeamMembersList from '../../containers/team-members-list/TeamMembersList.container';
 import PartnersList from '../partners/partners-list/PartnersList.component';
 
 const About = () => {

@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { rootReducer } from './reducers/root.reducer';
+import thunk from 'redux-thunk';
 import App from './components/App';
 import './index.scss';
 
@@ -33,6 +34,9 @@ const persistedState = getStateFromLocalStorage();
 const store = createStore(
   rootReducer,
   persistedState,
+  applyMiddleware(
+    thunk,
+  ),
 );
 
 const AppWrapper = () => {
