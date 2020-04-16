@@ -30,7 +30,7 @@ class TeamMembersList extends Component {
 };
 
 TeamMembersList.defaultProps = {
-  teamMembers: [{"": ""}],
+  teamMembers: [],
   fetchTeamMembers: () => {},
 };
 
