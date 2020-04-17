@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import MenuModal from '../containers/menu-modal/MenuModal.container';
 import Contact from './contact/Contact.component';
 import About from './about/About.component';
-import ForParents from './hero-pages/for-parents/ForParents.component';
-import ForTeachers from './hero-pages/for-teachers/ForTeachers.component';
+import ForParents from './for-parents/ForParents.component';
+import ForTeachers from './for-teachers/ForTeachers.component';
 import TwilioFlexWebChat from './twilio-flexweb-chat/TwilioFlexWebChat.component';
 
 

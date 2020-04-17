@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HeroHeader from '../hero-header/HeroHeader.component';
-import ArticleList from '../articles/article-list/ArticleList.component';
+import ArticleList from '../article-list/ArticleList.component';
 
-const ForParents = ( { articles } ) => {
+const ForTeachers = ( { articles } ) => {
   return (
     <div className="hero-page-section">
-      <HeroHeader heroType={ "Parents" }/>
+      <HeroHeader heroType={ "Teachers" }/>
       <ArticleList articles={articles}/>
     </div>
   )
 };
 
-ForParents.defaultProps = {
+ForTeachers.defaultProps = {
   articles: [{ "": "" }]
 };
 
-ForParents.propTypes = {
+ForTeachers.propTypes = {
   articles: PropTypes.arrayOf(PropTypes.objectOf(String))
 }
 
-export default ForParents;
+export default ForTeachers;

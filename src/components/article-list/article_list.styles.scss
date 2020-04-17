@@ -1,0 +1,9 @@
+@import '../../components';
+
+.article-list {
+  margin-bottom: 3em;
+
+  @media #{$large-mq} {
+    padding: 0 10em;
+  }
+}

@@ -6,8 +6,11 @@ const HeroHeader = ( { heroType } ) => {
   return (
     <>
       <div className="hero-header">
-        <h1 className="heading pink-underline">
-          Resources for { heroType }
+        <h1 className="heading">
+          Resources for { " " }
+          <span className="pink-underline">
+            { heroType }
+          </span>
         </h1>
         <div>
           <p className="sub-text">

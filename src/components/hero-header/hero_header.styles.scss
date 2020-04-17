@@ -1,0 +1,18 @@
+@import '../../components';
+
+.hero-header {
+  padding: 7em 1em 2em 1em;
+  
+  @media #{$large-mq} {
+    text-align: center;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .sub-text {
+    font-family: $secondary-font;
+    margin-top: 2em;
+  }
+}
