@@ -107,6 +107,16 @@
   }
 }
 
+
+.phone-icon {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+
+  &:before {
+    content: fa-content($fa-var-phone-alt)
+  }
+}
 .close-icon {
   @extend %fa-icon;
   @extend .fas;
