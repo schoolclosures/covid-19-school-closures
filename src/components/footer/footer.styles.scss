@@ -1,26 +1,79 @@
 @import '../../components';
 
-.footer {
+div.footer {
   height: 80vh;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 6em;
   width: 100%;
   font-family: $secondary-font;
+  
+  @media #{$large-mq} {
+    flex-flow: row nowrap;
+    height: 40vh;
+    margin-top: 0;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: flex-start;
+  }
+
+  .heading{
+    color: $primary-blue;
+    margin-bottom: 1em;
+    font-family: $primary-font;
+  }
+  
+  
+  .footer-left {
+    .school-closures {
+      color: $primary-blue;
+      margin: 1em;
+
+      @media #{$large-mq} {
+        flex-flow: column;
+      }
+
+      p {
+        margin-left: .5em;
+        font-size: 1.5em;
+
+        @media #{$large-mq} {
+          margin-top: .5em;
+        }
+      }
+    }
+    
+    .copyright-info {
+      display: none;
+
+      @media #{$large-mq} {
+        display: block;
+      }
+    }
+  }
+
+  .footer-center-left {
+    @media #{$large-mq} {
+      text-align: left;
+    }
+  }
+
+  .footer-center-right {
+    padding: 1em 0;
+  }
+
+  .footer-bottom {
+    @media #{$large-mq} { 
+      display: none;
+    }
+  }
+
 
   .hotline {
     margin: 2em;
   }
 
-  .school-closures {
-    color: $primary-blue;
-    margin: 1em;
-    p {
-      margin-left: .5em;
-      font-size: 1.5em;
-    }
-  }
 
   .footer-links-holder {
     .footer-link {
@@ -31,6 +84,13 @@
   }
 
   .footer-social-icons {
+    
+    .heading {
+      @media #{$large-mq} {
+        text-align: left;
+      }
+    }
+    
     .footer-social-icon {
       margin-right: 1em;
       background-color: $primary-grey;
@@ -39,7 +99,16 @@
       font-size: 1em;
       border-radius: 50px;
     }
+
+    .social-icons {
+      justify-content: center;
+
+      @media #{$large-mq} {
+        justify-content: start;
+      }
+    }
   }
+
 
   .copyright-info {
     margin: 1em;
