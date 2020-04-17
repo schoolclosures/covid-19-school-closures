@@ -21,6 +21,8 @@
   .hero-cta-holder {
     margin-top: 2em;
     font-family: $secondary-font;
+    width: 100%;
+    justify-content: center;
 
     a {
       font-size: 1.3em;
@@ -31,8 +33,12 @@
     }
     
     .btn-link-holder {
-      width: 40%;
-      height: 50px;
+      width: 50%;
+      height: 60px;
+
+      @media #{$large-mq} {
+        width: 30%;
+      }
   
       .btn-link {
         color: $accent-white;
