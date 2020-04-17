@@ -15,3 +15,14 @@ export const sharedReducer = (state={}, action) => {
     }
   } 
 };
+
+export const volunteersReducer = (state={}, action) => {
+  switch (action.type) {
+    case types.RECEIVE_TEAM_MEMBERS: {
+      return Object.assign({}, state, { teamMembers: action.teamMembers })
+    }
+
+    default:
+      return state;
+  }
+};

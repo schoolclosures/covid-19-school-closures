@@ -12,3 +12,11 @@ $primary-orange: #FFD875;
 // accent-colors
 $accent-blue: #6FA8FF;
 $accent-white: #FFF8EB;
+
+// Breakpoints
+$medium-bp: 768px;
+$large-bp: 1024px;
+
+// Media Queries
+$medium-mq: "(min-width: #{$medium-bp})";
+$large-mq: "(min-width: #{$large-bp})";
