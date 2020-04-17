@@ -29,5 +29,15 @@
         font-size: 1.5em;
       }
     }
+    
+    .btn-link-holder {
+      width: 40%;
+      height: 50px;
+  
+      .btn-link {
+        color: $accent-white;
+      }
+    }
+    
   }
 }
