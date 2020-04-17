@@ -7,6 +7,5 @@ const receiveTeamMembers = (teamMembers) => ({
 
 export const fetchTeamMembers = () => async(dispatch) => {
   const { data } = await API.get('/volunteers')
-  const { records } = data;
-  dispatch(receiveTeamMembers(records))
+  dispatch(receiveTeamMembers(data))
 };

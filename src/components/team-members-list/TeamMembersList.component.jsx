@@ -22,7 +22,7 @@ class TeamMembersList extends Component {
       <>
         <h2 className="heading pink-underline">Who we are</h2>
         <div className="row team-members">
-          {teamMembers.length ? teamMembers.map( teamMember => <TeamMember key={teamMember.id} teamMember={teamMember} /> ) : ""}
+          {teamMembers.length ? teamMembers.map( teamMember => <TeamMember key={teamMember.attrs.id} teamMember={teamMember} /> ) : ""}
         </div>
       </>
     )
