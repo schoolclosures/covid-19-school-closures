@@ -3,10 +3,15 @@
 .nav-bar {
   position: fixed;
   top: 0;
-  padding: 2em 3em;
   justify-content: space-between;
   width: 100%;
   background-color: $primary-blue;
+  font-family: $secondary-font;
+  padding: 2em 1em;
+
+  @media #{$large-mq} {
+    padding: 2em 3em;
+  }
 
   .menu-icon {
   @extend %fa-icon;

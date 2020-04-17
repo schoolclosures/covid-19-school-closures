@@ -1,3 +1,9 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla&display=swap');
+$primary-font: 'DM Serif Display', serif;
+$secondary-font: 'Karla', sans-serif;
+
+
 @import './assets/scss/fontawesome.scss';
 @import './assets/scss/regular.scss';
 @import './assets/scss/brands.scss';

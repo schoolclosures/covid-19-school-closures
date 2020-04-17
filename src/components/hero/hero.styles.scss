@@ -2,7 +2,7 @@
 
 .hero-section {
   background-color: $primary-blue;
-  height: 98vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 
@@ -10,9 +10,24 @@
     font-size: 2.5em;
     text-align: center;
     color: $accent-white;
+    font-family: $primary-font;
+
+    @media #{$large-mq} {
+      font-size: 4em;
+      padding: 0 2em;
+    }
   }
 
   .hero-cta-holder {
     margin-top: 2em;
+    font-family: $secondary-font;
+
+    a {
+      font-size: 1.3em;
+
+      @media #{$large-mq} {
+        font-size: 1.5em;
+      }
+    }
   }
 }
