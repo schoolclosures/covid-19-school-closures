@@ -1,11 +1,8 @@
 @import '../../components';
 
 .newsletter-subscription-holder {
-  margin: 2em;
+  margin: 1em 0;
   width: 100%;
-  .heading {
-    margin: 1em;
-  }
 
   input {
     padding: .5em 1em;
@@ -14,5 +11,9 @@
     background-color: $accent-white;
     color: white;
     border-bottom: 1px solid $primary-pink;
+
+    @media #{$large-mq} {
+      width: 100%;
+    }
   }
 }
