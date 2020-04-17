@@ -8,6 +8,7 @@
   background-color: $primary-blue;
   font-family: $secondary-font;
   padding: 2em 1em;
+  z-index: 9998;
 
   @media #{$large-mq} {
     padding: 2em 3em;

@@ -1,0 +1,14 @@
+@import '../../../../components';
+
+.article-card {
+  width: 100%;
+
+  .div-link {
+    border-top: 1px solid $accent-grey;
+    border-bottom: 1px solid $accent-grey;
+
+    .btn-link {
+      color: $primary-grey;
+    }
+  }
+}
