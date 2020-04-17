@@ -3,7 +3,7 @@
 .nav-bar {
   position: fixed;
   top: 0;
-  padding: 1em;
+  padding: 2em 3em;
   justify-content: space-between;
   width: 100%;
   background-color: $primary-blue;
@@ -14,28 +14,57 @@
   font-size: 1.3em;
   color: white;
 
-  &:before {
-    content: fa-content($fa-var-bars)
+    @media #{$large-mq} {
+      display: none;
+
+    }
+    
+    &:before {
+      content: fa-content($fa-var-bars)
+    }
+    
   }
-}
-
-.nav-text {
-  color: $accent-white;
-  margin-left: .5em;
-}
-
-.home-icon {
-  color: $accent-white;
-}
-
-.search-icon {
-  @extend %fa-icon;
-  @extend .fas;
-  font-size: 1.3em;
-  color: white;
-
-  &:before {
-    content: fa-content($fa-var-search)
+  
+  .nav-text {
+    color: $accent-white;
+    margin-left: .5em;
   }
-}
+  
+  .home-icon {
+    color: $accent-white;
+  }
+  
+  .search-icon {
+    @extend %fa-icon;
+    @extend .fas;
+    font-size: 1.3em;
+    color: white;
+    
+    &:before {
+      content: fa-content($fa-var-search)
+    }
+
+    @media #{$large-mq} {
+      display: none;
+    }
+  }
+
+  .nav-left {
+    @media #{$large-mq} {
+      display: none;
+    }
+  }
+
+  .nav-right {
+    .nav-link {
+      margin-right: 2em;
+      text-decoration: none;
+      color: white;
+      display: none;
+
+      @media #{$large-mq} {
+        display: inline;
+      }
+    }
+  }
 }

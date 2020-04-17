@@ -20,7 +20,7 @@ const App = () => {
       <Route exact path="/" component={Hero} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/for_teachers" component={ ForTeachers }/>
+      <Route exact path="/for-teachers" component={ ForTeachers }/>
       <Route exact path="/for-parents" component={ ForParents }/>
       <TwilioFlexWebChat />
       <Footer />
