@@ -1,1 +1,20 @@
 @import '../../components';
+
+.contact-info {
+  text-align: center;
+
+  @media #{$large-mq} {
+    margin-top: 0;
+  }
+
+  div.contact-detail {
+    margin-bottom: 1em;
+    @media #{$large-mq} {
+      flex-flow: row nowrap;
+    }
+
+    i {
+      margin-right: 1em;
+    }
+  }
+}
