@@ -10,6 +10,7 @@ div.menu-modal {
   background-color: $primary-blue;
   justify-content: center;
   align-items: center;
+  font-family: $secondary-font;
 
   @media #{$medium-mq} {
     display: none;

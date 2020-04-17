@@ -10,8 +10,8 @@ const MenuModal = ({ modalIsOpen, closeModal }) => {
         <i className="close-icon"></i>
       </button>
       <Link className="menu-modal-link" to="/">Home</Link>
-      <Link className="menu-modal-link" to="#">For Parents</Link>
-      <Link className="menu-modal-link" to="#">For Teachers</Link>
+      <Link className="menu-modal-link" to="/for-parents">For Parents</Link>
+      <Link className="menu-modal-link" to="/for-teachers">For Teachers</Link>
       <Link className="menu-modal-link" to="/about">About Us</Link>
       <Link className="menu-modal-link" to="/contact">Contact Us</Link>
     </div>
