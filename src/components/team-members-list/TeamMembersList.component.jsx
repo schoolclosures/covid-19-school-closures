@@ -2,14 +2,7 @@ import React, { Component } from 'react';
 import TeamMember from '../team-member/TeamMember.component';
 import PropTypes from 'prop-types';
 
-class TeamMembersList extends Component {
-
-  componentDidMount() {
-    const { fetchTeamMembers } = this.props;
-    fetchTeamMembers();
-  }
-
-  render() {
+const TeamMembersList = () => {
     const { teamMembers } = this.props;
 
     return (
@@ -20,17 +13,14 @@ class TeamMembersList extends Component {
         </div>
       </>
     )
-  }
 };
 
 TeamMembersList.defaultProps = {
   teamMembers: [],
-  fetchTeamMembers: () => {},
 };
 
 TeamMembersList.propTypes = {
   teamMembers: PropTypes.arrayOf(PropTypes.objectOf(String)),
-  fetchTeamMembers: PropTypes.func,
 }
 
 export default TeamMembersList;
