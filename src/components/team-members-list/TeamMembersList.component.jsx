@@ -3,12 +3,6 @@ import TeamMember from '../team-member/TeamMember.component';
 import PropTypes from 'prop-types';
 
 class TeamMembersList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      teamMembers: this.props.teamMembers,
-    }
-  }
 
   componentDidMount() {
     const { fetchTeamMembers } = this.props;
@@ -16,7 +10,7 @@ class TeamMembersList extends Component {
   }
 
   render() {
-    const { teamMembers } = this.state;
+    const { teamMembers } = this.props;
 
     return (
       <>
