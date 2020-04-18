@@ -3,6 +3,7 @@ import './team_member.styles.scss';
 
 const TeamMember = ({ teamMember }) => {
   const { attrs } = teamMember;
+  console.log(teamMember)
 
   return (
     <div className="team-member column">
