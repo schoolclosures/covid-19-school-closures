@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React                                            from 'react';
 import TeamMember from '../team-member/TeamMember.component';
 import PropTypes from 'prop-types';
+import './team_member_list.styles.scss';
 
-const TeamMembersList = () => {
-    const { teamMembers } = this.props;
+const TeamMembersList = ( { teamMembers } ) => {
 
     return (
       <>
-        <h2 className="heading pink-underline">Who we are</h2>
-        <div className="row team-members">
+        <h2 className="sub-heading pink-underline">Who we are</h2>
+        <div className="row-with-wrap team-members-list">
           { teamMembers && teamMembers.map( teamMember => <TeamMember key={teamMember.attrs.id} teamMember={teamMember} /> ) }
         </div>
       </>

@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import './about.styles.scss';
+import PropTypes from 'prop-types';
 import TeamMembersList from '../../containers/team-members-list/TeamMembersList.container';
 import PartnersList from '../partners/partners-list/PartnersList.component';
 
 class About extends Component {
 
   componentDidMount() {
+    const { fetchTeamMembers } = this.props;
     fetchTeamMembers();
   }
   
-  remder() {
+  render() {
     return (
       <div className="about-section column">
         <div className="about-intro section column">
           <h2 className="main-heading heading">Education doesn’t stop when schools close.</h2>
           <h2 className="sub-heading heading pink-underline">About Us</h2>
-          <p>
+          <p className="about-summary">
             Schoolclosures.org was crafted by a group of 
             volunteers made of teachers, students, full-time 
             workers, and many others. By the likes of people 
@@ -30,7 +32,8 @@ class About extends Component {
           <TeamMembersList />
         </div>
   
-        <div className="partners column">
+        <div className="our-partners-section column">
+          <h2 className="sub-heading blue-underline">Our Partners</h2>
           <PartnersList />
         </div>
       </div>

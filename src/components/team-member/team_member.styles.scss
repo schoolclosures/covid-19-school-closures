@@ -1,7 +1,18 @@
+@import '../../components';
+
 .team-member {
   width: 100%;
   text-align: center;
   margin: 1em 0;
+
+  @media #{$medium-mq} {
+    width: 45%;
+    margin-right: 1em;
+  }
+
+  @media #{$large-mq} {
+    width: 23%;
+  }
 
   .team-member-image {
     width: 100%;

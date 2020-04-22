@@ -2,21 +2,38 @@
 
 .about-section {
   width: 100%;
-  margin-top: 3.4em;
+  margin-top: 5em;
   
+  .sub-heading {
+    margin: 1em;
+    text-align: center;
+
+    @media #{$large-mq}  {
+      width: 14%;
+    }
+  }
+
   .about-intro {
     background-color: $primary-blue;
     color: $accent-white;
-    height: 80vh;
+    height: 70vh;
+    align-items: center;
+
+    @media #{$medium-mq}  {
+      height: 50vh;
+    }
 
     .main-heading {
       font-size: 2em;
-      color: $primary-orange;
+      color: $accent-white;
     }
   
-    .sub-heading {
-      margin: 1em;
 
+    .about-summary {
+      @media #{$large-mq}  {
+        width: 50%;
+        text-align: center;
+      }
     }
   }
 
@@ -28,12 +45,14 @@
   .who-we-are {
     width: 100%;
     margin-top: 1em;
+    align-items: center;
 
     div.team-members {
       flex-wrap: wrap;
     }
   }
 
-  .partners {
+  .our-partners-section {
+    align-items: center;
   }
 }

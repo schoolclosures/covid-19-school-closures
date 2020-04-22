@@ -1,14 +1,47 @@
 @import '../../components';
 
 .contact-section {
-  justify-content: center;
   color: $accent-white;
-  height: 100vh;
+  margin-top: 5em;
+  height: 110vh;
   background-color: $primary-blue;
+
+  @media #{$medium-mq} {
+    height: 60vh;
+  }
+
+  .contact-section-intro {
+    align-items: center;
+
+    @media #{$medium-mq} {
+      text-align: center;
+    }
+  }
   
   .heading{
     text-align: center;
     margin: 1em 0;
     font-size: 2.5em;
+    font-family: $primary-font;
+
+    @media #{$large-mq} {
+      width: 50%;
+    }
+  }
+
+  
+  div.contact-card-holder {
+
+    @media #{$medium-mq} {
+
+      flex-flow: row wrap;
+      margin-top: 2em;
+      justify-content: space-between;
+      padding: 0 2em;
+    }
+
+    @media #{$large-mq} {
+      padding: 0 18em;
+    }
   }
 }

@@ -6,9 +6,6 @@ import './partners_list.styles.scss';
 const PartnersList = ( { partners } ) => {
   return (
     <>
-      <div className="section">
-        <h2 className="heading blue-underline">Our Partners</h2>
-      </div>
       <div className="partners-list row-with-wrap">
         <Partner name={"Khan Academy"}/>
         <Partner name={"Dexter"}/>
