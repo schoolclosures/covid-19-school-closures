@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: grey;
+}
+
 %row {
   display: flex;
   flex-direction: row; 
