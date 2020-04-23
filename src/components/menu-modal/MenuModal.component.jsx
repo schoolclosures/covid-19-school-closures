@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './menu-modal.styles.scss';
 
-const MenuModal = ({ modalIsOpen, closeModal }) => {
+const MenuModal = ({ modalIsOpen, closeModal}) => {
   const [open, setOpenBool] = useState(true);
-  useEffect(()=> {
-    if (!open) {
-      closeModal();
-      setOpenBool(true);
-    }
-  });
+  if (!open) {
+    closeModal();
+    setOpenBool(true);
+  }
   return (
     <div className={`menu-modal column ${modalIsOpen ? "open" : ""}`}>
       <button onClick={() => closeModal()} className="no-bg-btn">
