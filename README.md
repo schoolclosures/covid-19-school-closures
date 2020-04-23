@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How To Contribute
 
-## Available Scripts
+#### Install the app on your local machine.
 
-In the project directory, you can run:
+* Fork and clone the app to your local machine, use this guide if you don't know how to do that
 
-### `yarn start`
+* Set the upstream remote so you can keep your copy of the app synced with the original. To do that go to your terminal and cd into your cloned odin project app directory. Then use one of the following commands:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### If you have ssh set up with Git
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+`$ git remote add upstream git@github.com:schoolclosures/covid-19-school-closures.git`
 
-### `yarn test`
+#### Otherwise
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`$ git remote add upstream https://github.com/schoolclosures/covid-19-school-closures.git`
 
-### `yarn build`
+#### Use one of the following operating system specific guides to set up the School Closures app on your machine:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you start working on your issue create a branch and name it like the following examples:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* If its a new feature
+`$ git checkout -b feature/new-feature-name`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* If its a bug fix
+`$ git checkout -b fix/fixed-bug-name`
 
-### `yarn eject`
+#### When you have finished and are ready to submit a Pull request:
+* Push your branch to your fork
+`$ git push origin <your branch name here>`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Create a pull request
+* Go to your fork on Github after you have pushed up your branch. A new button should be visible near the top of the page. It will allow you to create a pull request to the original School Closures Repo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*Please a detailed description for your pull request*
