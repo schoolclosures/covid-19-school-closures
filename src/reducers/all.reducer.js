@@ -26,3 +26,14 @@ export const volunteersReducer = (state={}, action) => {
       return state;
   }
 };
+
+export const articlesReducer = (state={}, action) => {
+  switch (action.type) {
+    case types.SET_CURRENT_TOPIC_ID: {
+      return Object.assign({}, state, { currentTopicId: action.topicId })
+    }
+
+    default:
+      return state;
+  }
+};

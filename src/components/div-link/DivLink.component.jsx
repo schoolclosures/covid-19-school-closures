@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './div_link.styles.scss';
 import { Link } from 'react-router-dom';
 
-const DivLink = ( { path, buttonText, handleClick } ) => {
+const DivLink = ( { path, buttonText, handleClick, iconType } ) => {
   return (
     <div className="div-link row">
       <button className="btn-link-holder no-bg-btn" onClick={handleClick} >
@@ -11,7 +11,7 @@ const DivLink = ( { path, buttonText, handleClick } ) => {
           {buttonText}
         </Link>
       </button>
-      <i className="arrow-right-icon" ></i>
+      <i className={`${iconType}-icon`} ></i>
     </div>
   )
 };

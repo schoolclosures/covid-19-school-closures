@@ -160,3 +160,12 @@
     content: fa-content($fa-var-arrow-right)
   } 
 }
+
+.plus-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-plus)
+  } 
+}
