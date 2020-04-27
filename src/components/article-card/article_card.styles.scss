@@ -2,13 +2,20 @@
 
 .article-card {
   width: 100%;
+  border-top: 1px solid $accent-grey;
+  border-bottom: 1px solid $accent-grey;
+  padding: 1em;
 
-  .div-link {
-    border-top: 1px solid $accent-grey;
-    border-bottom: 1px solid $accent-grey;
+  .article-card-header {
+    justify-content: space-between;
+  }
 
-    .btn-link {
-      color: $primary-grey;
-    }
+  .article-body {
+    margin-top: 1em;
+  }
+
+
+  .plus-icon {
+    color: $accent-grey;
   }
 }

@@ -1,0 +1,14 @@
+@import '../../components';
+
+.topic-card {
+  width: 100%;
+  border-top: 1px solid $accent-grey;
+  border-bottom: 1px solid $accent-grey;
+  justify-content: space-between;
+
+  .arrow-right-icon {
+    color: $accent-grey;
+  }
+
+  color: black;
+}

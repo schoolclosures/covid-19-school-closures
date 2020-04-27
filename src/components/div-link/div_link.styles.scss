@@ -7,16 +7,15 @@
   
   .btn-link-holder {
     width: 100%;
-    padding: 2em 0;
-
+    padding: 1.5em 0;
+    
     .btn-link {
       width: 100%;
       text-align: left;
       padding-left: 1em;
+      color: black;
     }
   }
 
-  .arrow-right-icon {
-    color: $accent-grey;
-  }
+  
 }
