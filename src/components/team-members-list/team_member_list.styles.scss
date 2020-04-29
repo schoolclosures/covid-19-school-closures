@@ -14,3 +14,13 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.page-number {
+  height: 25px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-family: "Karla", sans-serif;
+}
