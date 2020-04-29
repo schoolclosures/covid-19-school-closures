@@ -1,3 +1,16 @@
+
 .team-members-list {
   justify-content: center;
+}
+
+.page-navbar-team-members {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2B279B;
+  color: #ff7483;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
