@@ -15,16 +15,10 @@ const ArticleList = ({ articles, type, currentTopicId }) => {
           if (error) return `Error: ${error}`
 
           const articles = data.articles;
-          console.log(articles)
-
-          const [ firstArticle ] = articles;
-          if ( firstArticle ) {
-            const { topicId: {title: title} } = firstArticle;
-          }
           
           return (
             <>
-              <h1>{firstArticle && title}</h1>
+              <h1>{articles.length ? articles[0].title.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  title : ""}</h1>
               {articles.map( article => <ArticleCard key={article.id} article={article}/> )}
             </>
           )
