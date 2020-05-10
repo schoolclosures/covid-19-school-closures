@@ -4,16 +4,28 @@
   margin: 1em 0;
   width: 100%;
 
-  input {
-    padding: .5em 1em;
-    width: 90%;
-    border: none;
+  .input-row {
     background-color: $accent-white;
-    color: white;
+    color: $primary-blue;
     border-bottom: 1px solid $primary-pink;
+    
+    input {
+      display: inline-block;
+      outline: none;
+      padding: .5em 1em;
+      width: 90%;
+      border: none;
+      background-color: transparent;
+      font-family: $secondary-font;
+    }
+
+    .subscribe-button:hover {
+      cursor: pointer;
+    }
 
     @media #{$large-mq} {
       width: 100%;
     }
   }
 }
+

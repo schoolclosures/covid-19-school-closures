@@ -37,3 +37,22 @@ export const articlesReducer = (state={}, action) => {
       return state;
   }
 };
+
+export const newsletterReducer = (state={}, action) => {
+    switch (action.type) {
+      case types.SUBSCRIBE_SUCCESS: {
+        return Object.assign({}, state, { subscribeStatus: 'success' })
+      }
+
+      case types.SUBSCRIBE_FAILURE: {
+        return Object.assign({}, state, { subscribeStatus: 'failure' })
+      }
+
+      case types.SUBSCRIBE_RESET: {
+        return Object.assign({}, state, { subscribeStatus: null })
+      }
+  
+      default:
+        return state;
+    }
+  };
