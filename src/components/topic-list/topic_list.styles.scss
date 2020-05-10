@@ -1,9 +1,9 @@
 @import '../../components';
 
-.article-list {
-  margin-bottom: 3em;
+.topic-list {
+  padding: 0 1em;
 
   @media #{$large-mq} {
-    padding: 0 10em;
+    padding: 0 4em;
   }
 }

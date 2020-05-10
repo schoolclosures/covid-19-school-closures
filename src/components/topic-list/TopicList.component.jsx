@@ -4,10 +4,11 @@ import './topic_list.styles.scss';
 import { Query } from 'react-apollo';
 import { TEACHER_TOPICS_QUERY, PARENT_TOPICS_QUERY } from './topics_query';
 import TopicCard from '../../containers/topic-card/TopicCard.container';
+import './topic_list.styles.scss';
 
 const TopicList = ({ topics, type }) => {
   return (
-    <div className="article-list">
+    <div className="topic-list">
       <Query query={type === "teacher" ? TEACHER_TOPICS_QUERY : PARENT_TOPICS_QUERY} >
         {( { loading, error, data } ) => {
 

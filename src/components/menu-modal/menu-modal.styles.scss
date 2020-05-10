@@ -40,10 +40,6 @@ div.menu-modal {
 div.menu-modal.open {
   display: flex;
   animation: open-modal .5s ease-in-out 0s 1 forwards normal;
-
-  @media #{$medium-mq} {
-    display: none;
-  }
 }
 
 @keyframes open-modal {

@@ -1,10 +1,15 @@
 @import '../../components';
 
 .article-list {
-  margin: 3em;
-  margin-top: 6em;
+  width: 80%;
+  margin: auto;
+  margin-top: 8em;
+  align-items: center;
 
   @media #{$large-mq} {
+    margin-top: 10em;
     padding: 0 10em;
   }
+
+  
 }

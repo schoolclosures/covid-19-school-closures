@@ -7,7 +7,7 @@ import { teachersArticleQuery, parentsArticleQuery } from './articles_query';
 
 const ArticleList = ({ articles, type, currentTopicId }) => {
   return (
-    <div className="article-list">
+    <div className="article-list column">
       <Query query={type === "teacher" ? teachersArticleQuery : parentsArticleQuery} variables={ { "topicId": currentTopicId.toString() } } >
         {( { loading, error, data } ) => {
 

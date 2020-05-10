@@ -1,0 +1,16 @@
+@import '../../../components';
+
+.page-number {
+  height: 40px;
+  width: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-family: $secondary-font;
+  display: none;
+
+  @media #{$medium-mq} {
+    display: flex;
+  }
+}

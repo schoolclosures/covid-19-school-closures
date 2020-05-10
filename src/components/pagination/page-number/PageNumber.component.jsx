@@ -1,16 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './page_number.styles.scss'
 
 const PageNumber = ({ value, currentPage, handleClick }) => {
   return (
-    <div className="page-number" 
+    <div 
+      className="page-number" 
       style={
         {
           backgroundColor: (currentPage === value) ? '#6FA8FF': null, 
           color: (currentPage === value) ? '#080808': null
         }
       }
-      onClick={() => handleClick(value)}> {value}
+      onClick={() => handleClick(value)}
+    > 
+      {value}
     </div>
   )
 };

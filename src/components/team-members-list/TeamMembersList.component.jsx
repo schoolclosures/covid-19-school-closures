@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TeamMember from '../team-member/TeamMember.component';
 import PropTypes from 'prop-types';
 import './team_member_list.styles.scss';
-import PaginationControl from './pagination/pagination-controls/PaginationControl.component';
+import PaginationControl from '../pagination/pagination-controls/PaginationControl.component';
 
 
 const TeamMembersList = ( { teamMembers } ) => { 

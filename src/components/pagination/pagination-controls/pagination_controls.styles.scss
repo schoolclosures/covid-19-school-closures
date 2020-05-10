@@ -1,0 +1,24 @@
+@import '../../../components';
+
+.page-navbar-team-members {
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2B279B;
+  color: $accent-white;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .arrow-right-icon, .arrow-left-icon {
+    color: white;
+  }
+
+  @media #{$medium-mq} {
+    width: 65%;
+  }
+
+  @media #{$large-mq} {
+    width: 50%;
+  }
+}

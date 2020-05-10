@@ -5,6 +5,12 @@
   border-top: 1px solid $accent-grey;
   border-bottom: 1px solid $accent-grey;
   justify-content: space-between;
+  font-size: 1em;
+
+  @media #{$large-mq} {
+    font-size: 1.2em;
+  }
+
 
   .arrow-right-icon {
     color: $accent-grey;

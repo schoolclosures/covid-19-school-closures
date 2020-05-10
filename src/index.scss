@@ -42,22 +42,6 @@
   border: none;
 }
 
-.btn-link-holder {
-  position: relative;
-  display: block;
-}
-
-.btn-link {
-  position: absolute;
-  display: block;
-  padding-top: 1em;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-decoration: none;
-}
-
 .section {
   padding: 1em;
 }
@@ -177,4 +161,8 @@
   &:before {
     content: fa-content($fa-var-plus)
   } 
+}
+
+.hero-page-section {
+  text-align: center;
 }

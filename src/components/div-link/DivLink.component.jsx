@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const DivLink = ( { path, buttonText, handleClick, iconType } ) => {
   return (
     <div className="div-link row">
-      <button className="btn-link-holder no-bg-btn" onClick={handleClick} >
+      <button className="btn-link-holder no-bg-btn row" onClick={handleClick} >
         <Link to={`${path}`} className="btn-link">
           {buttonText}
         </Link>
