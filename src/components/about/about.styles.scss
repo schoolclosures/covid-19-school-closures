@@ -18,9 +18,10 @@
     color: $accent-white;
     height: 70vh;
     align-items: center;
+    text-align: center;
 
     @media #{$medium-mq}  {
-      height: 50vh;
+      height: 40vh;
     }
 
     .main-heading {
@@ -31,8 +32,8 @@
 
     .about-summary {
       @media #{$large-mq}  {
-        width: 50%;
-        text-align: center;
+        width: 70%;
+        font-size: 1.3em;        
       }
     }
   }
