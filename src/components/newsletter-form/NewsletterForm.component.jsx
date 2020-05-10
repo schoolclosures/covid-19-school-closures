@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './newsletter_form.styles.scss';
 
-const NewsletterForm = ({ doSubscribe, subscribeStatus }) => {
+const NewsletterForm = ({ subscribeToNewsletter, subscribeStatus }) => {
   const [emailAddress, setEmailAddress] = useState();
 
   switch(subscribeStatus) {
@@ -15,9 +15,9 @@ const NewsletterForm = ({ doSubscribe, subscribeStatus }) => {
           <input 
             className="newsletter-subscription-input" 
             placeholder="E-mail Address"
-            onKeyUp={(event) => event.keyCode === 13 ? doSubscribe(emailAddress) : setEmailAddress(event.target.value)}
+            onKeyUp={(event) => event.keyCode === 13 ? subscribeToNewsletter(emailAddress) : setEmailAddress(event.target.value)}
           />
-          <i className="fas fa-arrow-right subscribe-button" onClick={() => doSubscribe(emailAddress)} />
+          <i className="fas fa-arrow-right subscribe-button" onClick={() => subscribeToNewsletter(emailAddress)} />
         </div>
       </div>
     );
@@ -30,7 +30,7 @@ NewsletterForm.defaultProps = {
 
 NewsletterForm.propTypes = {
   subscribeToNewsletter: PropTypes.func,
-  subsbcvribeStatus: PropTypes.string,
+  subscribeStatus: PropTypes.string,
 }
 
 export default NewsletterForm;

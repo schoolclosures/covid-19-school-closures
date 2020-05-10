@@ -48,8 +48,8 @@ export const newsletterReducer = (state={}, action) => {
         return Object.assign({}, state, { subscribeStatus: 'failure' })
       }
 
-      case types.SUBSCRIBE_RESET: {
-        return Object.assign({}, state, { subscribeStatus: null })
+      case types.RESET_SUBSCRIBE: {
+        return Object.assign({}, state, { subscribeStatus: '' })
       }
   
       default:
