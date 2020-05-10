@@ -14,7 +14,7 @@ const subscribeReset = () => ({
   
 export const subscribeToNewsletter = (emailAddress) => async(dispatch) => {
   try {
-    const { data } = await API.post('/newsletter', { 
+    const { data } = await API.post('/api/v1/newsletter', { 
       emailAddress
     });
 
