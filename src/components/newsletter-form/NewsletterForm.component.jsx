@@ -25,12 +25,12 @@ const NewsletterForm = ({ doSubscribe, subscribeStatus }) => {
 };
 
 NewsletterForm.defaultProps = {
-  subscribeToNewsletter: () => { console.log('deafult ')},
+  subscribeToNewsletter: () => { console.log('default') },
 };
 
 NewsletterForm.propTypes = {
   subscribeToNewsletter: PropTypes.func,
-  subsbcvribeStatus: PropTypes.string
+  subsbcvribeStatus: PropTypes.string,
 }
 
 export default NewsletterForm;

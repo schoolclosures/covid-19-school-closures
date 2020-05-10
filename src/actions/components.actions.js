@@ -13,5 +13,4 @@ export const types = {
 
 export const API = axios.create({
   baseURL: `https://schoolclosures-api.herokuapp.com`,
-//   baseURL: `http://localhost:3000`,
 });
