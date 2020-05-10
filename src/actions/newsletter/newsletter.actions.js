@@ -22,6 +22,6 @@ export const subscribeToNewsletter = (emailAddress) => async(dispatch) => {
   } catch (err) {
     dispatch(subscribeFailure());
   } finally {
-    setTimeout(() => dispatch(subscribeReset()), 30000);
+    setTimeout(() => dispatch(subscribeReset()), 3000);
   }
 };
