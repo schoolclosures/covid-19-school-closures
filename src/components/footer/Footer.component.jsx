@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.styles.scss';
 import SocialIcons from '../social-icons/SocialIcons.component';
-import NewsletterForm from '../../containers/newsletter-form/NewsletterForm';
+import NewsletterForm from '../../containers/newsletter-form/NewsletterForm.container';
 import ContactInfo from '../contact-info/ContactInfo.component';
 import Copyright from '../copyright/copyright.component';
 
