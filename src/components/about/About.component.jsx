@@ -33,7 +33,7 @@ class About extends Component {
         </div>
   
         <div className="our-partners-section column">
-          <h2 className="sub-heading blue-underline">Our Partners</h2>
+          <h2 className="sub-heading pink-underline">Our Partners</h2>
           <PartnersList />
         </div>
       </div>

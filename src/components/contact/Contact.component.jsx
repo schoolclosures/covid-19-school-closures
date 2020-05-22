@@ -16,7 +16,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-card-holder column">
-        <ContactCard contactChannel={"Email"} contactDetail={"schoolclosures@gmail.com"}/>
+        <ContactCard contactChannel={"Email"} contactDetail={"manisha@modulo.app"}/>
         <ContactCard contactChannel={"Twitter"} contactDetail={"@covid19kids"}/>
         <ContactCard contactChannel={"Facebook"} contactDetail={"covid19kids"}/>
       </div>
