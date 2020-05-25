@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button_link.styles.scss';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-const ButtonLink = ( { outlineColor, path, buttonAction, handleClick } ) => {
+const ButtonLink = withRouter(( { outlineColor, path, buttonAction, handleClick, history } ) => {
   return (
-    <button className={`${outlineColor}-btn cta-btn btn-link-holder`} onClick={handleClick} >
+    <button className={`${outlineColor}-btn cta-btn btn-link-holder`} onClick={() => history.push(path)} >
       <Link to={`${path}`} className="btn-link">
         {buttonAction}
       </Link>
     </button>
   )
-};
+});
 
 ButtonLink.propTypes = {
   outlineColor: PropTypes.string,
